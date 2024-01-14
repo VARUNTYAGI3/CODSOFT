@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  text-decoration: none;
+}
+body {
+  background-color: #081b29;
+  overflow-x: hidden;
+}
+header {
+  background-color: #081b29;
+  height: 71px;
+  display: flex;
+  font-size: 23px;
+  justify-content: space-between;
+  color: white;
+  margin: 7px 38px;
+}
+.nav {
+  margin: -50px 476px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav a {
+  text-decoration: none;
+  font-size: x-large;
+  color: white;
+  animation-direction: reverse;
+  transition: 0.6s;
+  animation: Slide 1.9s ease-out forwards;
+}
+.nav a:hover {
+  color: rgb(36, 193, 232);
+}
+.home {
+  margin: -360px 846px;
+
+  border-radius: 79px;
+  position: relative;
+}
+.home img {
+  border-radius: 50%;
+  animation-name: imgs;
+  animation-duration: 0.9s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-fill-mode: forwards;
+}
+.home:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #3bddff;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(40px);
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  margin-right: 11px;
+  border-radius: 88px;
+  transition: ease-in-out;
+}
+div.main {
+  width: 23px;
+}
+.main {
+  color: white;
+  margin: 213px 91px;
+  width: fit-content;
+}
+main h1 {
+  font-size: 40px;
+}
+main h3 {
+  font-weight: 900;
+  font-size: x-large;
+  animation: Lefts 1s ease-in reverse;
+}
+main h2 {
+  font-size: xx-large;
+  color: aqua;
+  animation: Tops 1s forwards;
+}
+.social-media {
+  margin: 89px;
+  padding: 85px 17px;
+}
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid rgb(6, 233, 233);
+  border-radius: 50%;
+  color: rgb(6, 233, 233);
+  text-decoration: none;
+  font-size: 20px;
+}
+.social-media a:hover {
+  background-color: rgb(6, 233, 233);
+  color: black;
+}
+.about {
+  height: 730px;
+}
+.abtimg {
+  position: relative;
+}
+.abtimg img {
+  border-radius: 50%;
+  height: 448px;
+  width: 429px;
+  margin-left: 107px;
+  margin-top: 80px;
+}
+.abtimg::before,
+.abtimg::after {
+  content: "";
+  position: absolute;
+  top: 74px;
+  left: 102px;
+  right: 977px;
+  bottom: -1px;
+  background: linear-gradient(45deg, #000, #1c2223, cyan);
+  background-size: cover;
+  width: calc(100%+20px);
+  height: calc(100%+20px);
+  z-index: -1;
+  border-radius: 50%;
+  animation: animates 4s linear infinite;
+}
+.abtimg::after {
+  filter: blur(30px);
+  opacity: 0.99;
+}
+.sec {
+  margin: -332px 0px;
+}
+.sec h1 {
+  color: white;
+  font-weight: bold;
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  margin-left: 194px;
+  animation: anime 1s ease-in forwards;
+}
+.sec h2 {
+  display: flex;
+  justify-content: center;
+  color: #3bddff;
+  margin-left: 371px;
+  font-size: xx-large;
+  animation: animes 1.2s ease-out forwards;
+}
+.me {
+  display: flex;
+  justify-content: end;
+  margin-right: 45px;
+  color: aliceblue;
+  font-size: larger;
+  animation: animess 1.5s ease-in-out forwards;
+}
+.skills {
+  height: 630px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: xx-large;
+  animation: my 1s ease-in backwards;
+}
+.lang {
+  display: grid;
+  margin: 45px -486px;
+  font-size: 80px;
+  animation: animess 2.2s ease-in-out forwards;
+}
+.lang h3 {
+  display: flex;
+  font-size: xxx-large;
+  margin: -105px 198px;
+  color: white;
+  animation: animes 2.2s ease-out forwards;
+}
+.Projects {
+  height: 630px;
+  font-size: larger;
+}
+.Projects h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: -64px 0px;
+  animation: my 1s ease-in backwards;
+}
+.p1 img {
+  width: 594px;
+  border-radius: 22px;
+  margin: 218px 55px;
+}
+.p1 {
+  position: relative;
+}
+.p1::before,
+.p1::after {
+  content: "";
+  position: absolute;
+  top: 209px;
+  left: 48px;
+  right: 864px;
+  bottom: 59px;
+  border-radius: 28px;
+  background: linear-gradient(45deg, #7e0a0a, #a440c6, cyan, purple);
+  background-size: cover;
+  z-index: -1;
+  animation: animates 4s linear infinite;
+}
+.p1::after {
+  filter: blur(30px);
+  opacity: 0.99;
+  animation: image 3.2s ease-in forwards;
+}
+.btn1 {
+  display: block;
+  margin: -198px 286px;
+  font-size: x-large;
+  width: 136px;
+  border-radius: 24px;
+  border: 2px solid rgb(6, 233, 233);
+  background: transparent;
+  color: rgb(6, 233, 233);
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+}
+.btn1:hover {
+  background-color: rgb(6, 233, 233);
+  color: black;
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan;
+}
+.p2 img {
+  width: 594px;
+  border-radius: 22px;
+  margin: 218px 55px;
+}
+.p2 {
+  position: relative;
+  margin: 23px 789px;
+}
+.p2::before,
+.p2::after {
+  content: "";
+  position: absolute;
+  top: 209px;
+  left: 48px;
+  right: -657px;
+  bottom: 59px;
+  border-radius: 28px;
+  background: linear-gradient(45deg, #7e0a0a, #21339a, cyan, #d110f3);
+  background-size: cover;
+  z-index: -1;
+  animation: animates 4s linear infinite;
+}
+.p2::after {
+  filter: blur(30px);
+  opacity: 0.99;
+  animation: image 3.2s ease-in forwards;
+}
+.btn2 {
+  margin: -196px 325px;
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  width: 136px;
+  border-radius: 24px;
+  border: 2px solid rgb(6, 233, 233);
+  background: transparent;
+  color: rgb(6, 233, 233);
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+}
+.btn2:hover {
+  background-color: rgb(6, 233, 233);
+  color: black;
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan;
+}
+.Resume {
+  height: 200px;
+}
+.Resume h1 {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  margin-top: 300px;
+  margin-left: 30px;
+  font-size: 40px;
+}
+.Resume h3 {
+  color: white;
+  font-size: x-large;
+  margin: 6px 27px;
+  animation: Lefts 1s ease-in reverse;
+}
+.btn {
+  border: 2px solid rgb(6, 233, 233);
+  background: transparent;
+  color: rgb(6, 233, 233);
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+  font-size: x-large;
+  border-radius: 21px;
+  margin: -2px 141px;
+  font-weight: bold;
+}
+.btn a {
+  color: aliceblue;
+}
+.btn:hover {
+  background-color: rgb(6, 233, 233);
+  color: black;
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan;
+}
+.Contact {
+  color: white;
+  display: contents;
+}
+.c {
+  padding: 0px 315px;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer {
+  background-color: #060808;
+  color: white;
+  height: 230px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.fc1 {
+  display: inline-grid;
+  justify-content: center;
+  font-size: larger;
+}
+.fc2 {
+  display: inline-grid;
+  letter-spacing: 2px;
+  font-size: larger;
+}
+.container .social-media {
+  margin: 0;
+  padding: 0;
+  font-size: larger;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 29px;
+}
+.top {
+  display: flex;
+  justify-content: flex-end;
+  color: aliceblue;
+  font-size: xx-large;
+}
+.upward {
+  bottom: 0;
+  position: -webkit-sticky;
+  position: fixed;
+  color: cyan;
+}
+@keyframes animates {
+  0% {
+    background-position: 0 43px;
+  }
+  50% {
+    background-position: 308px 216px;
+  }
+  100% {
+    background-position: 0 506px;
+  }
+}
+@keyframes Slide {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes Tops {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes Lefts {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes imgs {
+  0% {
+    transform: translateZ(-100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateZ(0px);
+    opacity: 0;
+  }
+}
+@keyframes anime {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes animes {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes animess {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes my {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes image {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes image2 {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
